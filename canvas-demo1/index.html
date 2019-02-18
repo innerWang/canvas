@@ -5,13 +5,30 @@
 	<title>我的画板</title>
 	<link rel="stylesheet" href="./style.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="//at.alicdn.com/t/font_1048952_wecnjsa6t29.js"></script>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
 	<div class="actions">
-		<button class="eraser">橡皮擦</button>
-		<button class="brush active">画笔</button>
+		<svg class="icon brush active" aria-hidden="true">
+		  <use xlink:href="#icon-pencil"></use>
+		</svg>
+		<svg class="icon eraser" aria-hidden="true">
+		  <use xlink:href="#icon-eraser"></use>
+		</svg>
+		<svg class="icon" id="clear" aria-hidden="true">
+		  <use xlink:href="#icon-clear"></use>
+		</svg>
+		<svg class="icon" id="save" aria-hidden="true">
+		  <use xlink:href="#icon-save"></use>
+		</svg>
 	</div>
+	<ul class="colors">
+		<li class="black active" data-color="black"></li>
+		<li class="red" data-color="red"></li>
+		<li class="blue" data-color="blue"></li>
+		<li class="green" data-color="green"></li>
+	</ul>
 	<script src="./index.js"></script>
 </body>
 </html>

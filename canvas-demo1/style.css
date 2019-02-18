@@ -8,28 +8,93 @@ body {
 }
 
 #canvas{
-	background: #b4f3ed;
+	/*background: #b4f3ed;*/
 	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .actions{
 	position: fixed;
-	right: 1vh;
-	top: 1vh;
+	left: 10px;
+	top: 10px;
 }
 
-.actions > button{
+.actions > svg {
+	width: 1.5em;
+	height: 1.5em;
+	padding: .1em;
 	border-radius: 3px;
-	text-align: center;
-	padding: 5px;
-  border: none;
-	background: #fff;
-	outline: none;
+	border: 2px solid transparent;
 }
 
-.actions> button.active{
+.actions> svg.active{
 	border: 2px solid #56a3e6;
 }
+
+.icon {
+     width: 1em; height: 1em;
+     vertical-align: -0.15em;
+     fill: currentColor;
+     overflow: hidden;
+}
+
+ul li{
+	list-style: none;
+}
+
+
+.colors{
+	position: fixed;
+	left: 15px;
+	top: 44px;
+}
+
+.colors>li {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 12px 0;
+	transition: all .3s;
+}
+
+
+.colors>li.black{
+	background: black;
+}
+.colors>li.red{
+	background: red;
+}
+
+.colors>li.blue{
+	background: blue;
+}
+
+
+.colors>li.green{
+	background: green;
+}
+
+.colors>li.active{
+	transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
