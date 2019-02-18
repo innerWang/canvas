@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+#canvas{
+	background: #b4f3ed;
+	display: block;
+}
+
+.actions{
+	position: fixed;
+	right: 1vh;
+	top: 1vh;
+}
+
+.actions > button{
+	border-radius: 3px;
+	text-align: center;
+	padding: 5px;
+  border: none;
+	background: #fff;
+	outline: none;
+}
+
+.actions> button.active{
+	border: 2px solid #56a3e6;
+}
+
+
+
